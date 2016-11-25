@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import pageobjects.HomePage;
 import pageobjects.LoginPage;
+import pageobjects.RetryLoginPage;
 
 public class TestLogin {
 
@@ -20,6 +21,8 @@ public class TestLogin {
 	LoginPage objLoginPage;
 	
 	HomePage objHomePage;
+	
+	RetryLoginPage objRetryLoginPage;
 
 	@BeforeMethod
 	public void beforeMethod() {
@@ -67,4 +70,20 @@ public class TestLogin {
 		Assert.assertTrue(objHomePage.getUserName().contains("Admin"));
 	}
 
+	@Test
+	public void testLoginWithIncorrectData(){
+		
+		// Create Login Page object
+		objLoginPage = new LoginPage(driver);
+		
+		// login to application
+		objLoginPage.login("John", "John");
+		
+		// Create Home Page object
+		objRetryLoginPage = new RetryLoginPage(driver);
+		
+		// Verify user name after login
+		Assert.assertTrue(objRetryLoginPage.getHeading().contains("Retry Login"));
+	}
+	
 }

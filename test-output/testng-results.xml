@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21477" started-at="2016-11-20T12:26:25Z" finished-at="2016-11-20T12:26:46Z">
+  <suite name="Default suite" duration-ms="20483" started-at="2016-11-25T19:41:25Z" finished-at="2016-11-25T19:41:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21477" started-at="2016-11-20T12:26:25Z" finished-at="2016-11-20T12:26:46Z">
+    <test name="Default test" duration-ms="20483" started-at="2016-11-25T19:41:25Z" finished-at="2016-11-25T19:41:46Z">
       <class name="tests.TestLogin">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.TestLogin@18be83e4]" name="beforeClass" is-config="true" duration-ms="32" started-at="2016-11-20T13:26:25Z" finished-at="2016-11-20T13:26:25Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.TestLogin@4c70fda8]" name="beforeClass" is-config="true" duration-ms="23" started-at="2016-11-25T20:41:25Z" finished-at="2016-11-25T20:41:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.TestLogin@18be83e4]" name="beforeMethod" is-config="true" duration-ms="15220" started-at="2016-11-20T13:26:25Z" finished-at="2016-11-20T13:26:40Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.TestLogin@4c70fda8]" name="beforeMethod" is-config="true" duration-ms="16275" started-at="2016-11-25T20:41:26Z" finished-at="2016-11-25T20:41:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLoginAsAdmin()[pri:0, instance:tests.TestLogin@18be83e4]" name="testLoginAsAdmin" duration-ms="3859" started-at="2016-11-20T13:26:40Z" finished-at="2016-11-20T13:26:44Z">
+        <test-method status="PASS" signature="testLoginWithIncorrectData()[pri:0, instance:tests.TestLogin@4c70fda8]" name="testLoginWithIncorrectData" duration-ms="1906" started-at="2016-11-25T20:41:42Z" finished-at="2016-11-25T20:41:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginAsAdmin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.TestLogin@18be83e4]" name="afterMethod" is-config="true" duration-ms="2285" started-at="2016-11-20T13:26:44Z" finished-at="2016-11-20T13:26:46Z">
+        </test-method> <!-- testLoginWithIncorrectData -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.TestLogin@4c70fda8]" name="afterMethod" is-config="true" duration-ms="2256" started-at="2016-11-25T20:41:44Z" finished-at="2016-11-25T20:41:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.TestLogin -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
